@@ -107,13 +107,14 @@
 
   // ── GSAP: nebula setup + pulse ─────────────────────────────────────────────
   document.querySelectorAll('#nebulas ellipse').forEach((el, i) => {
-    gsap.set(el, { rotation: NEBULA_DEFS[i].rot, transformOrigin: 'center center' });
+    const origin = `${NEBULA_DEFS[i].x.toFixed(1)} ${NEBULA_DEFS[i].y.toFixed(1)}`;
+    gsap.set(el, { rotation: NEBULA_DEFS[i].rot, svgOrigin: origin });
     gsap.to(el, {
-      opacity:         r(0.12, 0.18),
-      scale:           r(1.05, 1.15),
-      rotation:        `+=${r(-15, 15).toFixed(1)}`,
-      transformOrigin: 'center center',
-      duration:        r(8, 14),
+      opacity:   r(0.12, 0.18),
+      scale:     r(1.05, 1.15),
+      rotation:  `+=${r(-15, 15).toFixed(1)}`,
+      svgOrigin: origin,
+      duration:  r(8, 14),
       repeat: -1, yoyo: true,
       ease: 'sine.inOut',
       delay: r(0, 8),
