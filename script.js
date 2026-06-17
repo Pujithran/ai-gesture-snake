@@ -3,20 +3,20 @@
    ===================================================================== */
 
 // ╔═══════════════════════════════════════════════════════════════════╗
-// ║                  ✏️  STUDENT CUSTOMIZATION AREA  ✏️                ║
+// ║                  ✏️  STUDENT CUSTOMIZATION AREA  ✏️              ║
 // ║                                                                   ║
-// ║   Change at least ONE value below before you deploy your fork.   ║
-// ║   Required for the workshop:                                     ║
+// ║   Change at least ONE value below before you deploy your fork.    ║
+// ║   Required for the workshop:                                      ║
 // ║     1. playerName  → your own name                                ║
 // ║     2. gameTitle   → your own game title                          ║
 // ║     3. snakeSpeed  → try a different number                       ║
 // ╚═══════════════════════════════════════════════════════════════════╝
 
 const GAME_CONFIG = {
-  playerName: "Space Explorer",   // 👈 put YOUR name here
-  gameTitle: "AI Space Snake",    // 👈 invent your own title
+  playerName: "Pujithran",   // 👈 put YOUR name here
+  gameTitle: "Paambu game",    // 👈 invent your own title
 
-  snakeSpeed: 220,        // milliseconds per move. BIGGER = SLOWER. Try 260 for easy mode, 140 for fast!
+  snakeSpeed: 300,        // milliseconds per move. BIGGER = SLOWER. Try 260 for easy mode, 140 for fast!
   pointsPerCrystal: 10,   // score for each crystal collected
   winningScore: 200,      // reach this score to complete the mission
   levelUpEvery: 5,        // crystals needed to advance one level
